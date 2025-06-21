@@ -1,0 +1,9 @@
+services:
+  - type: cron
+    name: woning-checker
+    schedule: "0 * * * *"  # elke uur
+    runtime: python
+    plan: free
+    repo: https://github.com/jouwgebruikersnaam/jouwrepo
+    buildCommand: ""
+    startCommand: "python woning_checker.py"
